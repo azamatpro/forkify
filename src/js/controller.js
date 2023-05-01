@@ -78,6 +78,7 @@ const controlBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 const controlAddRecipe = async function (newRecipe) {
+  console.log(newRecipe);
   try {
     // Show loading spinner
     addRecipeView.renderSpinner();

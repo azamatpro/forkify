@@ -68,6 +68,11 @@
     display: flex;
     align-items: center;
     padding: 7.5rem 8rem 3.5rem 8rem;
+    
+    @media only screen and (max-width: $bp-less-medium) {
+      padding: 7.5rem 2rem 3.5rem 2rem;
+    }
+    
   }
 
   &__info {
@@ -75,10 +80,19 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
-
+    
     &:not(:last-child) {
       margin-right: 4.5rem;
+      @media only screen and (max-width: $bp-smallest) {
+        margin-right: 1.5rem;
+      }
     }
+    
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.4rem;
+      
+    }
+
   }
 
   &__info-icon {
@@ -175,5 +189,8 @@
 
   &__publisher {
     font-weight: 700;
+  }
+  @media only screen and (max-width: $bp-less-medium) {
+    margin: 0 2rem;
   }
 }

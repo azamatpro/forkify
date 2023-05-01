@@ -51,7 +51,7 @@ export const loadSearchResults = async function (query) {
         title: rec.title,
         publisher: rec.publisher,
         image: rec.image_url,
-        ...(rec.key && {key: rec.key})
+        ...(rec.key && { key: rec.key }),
       };
     });
   } catch (error) {
@@ -69,7 +69,7 @@ export const getSearchResultsPage = function (page = state.search.page) {
 export const updateServings = function (newServings) {
   // newQty = oldQty * newServings / oldServings
   state.recipe.ingredients.forEach(ing => {
-    ing.quantity = (ing.quantity * newServings) / state.recipe.servings;
+    ing.quantity = ((ing.quantity * newServings) / state.recipe.servings).toFixed(2);
   });
   state.recipe.servings = newServings;
 };

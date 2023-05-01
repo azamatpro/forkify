@@ -9,6 +9,17 @@
     margin-left: 4rem;
     height: 4.6rem;
     display: block;
+
+    @media only screen and (max-width: $bp-less-medium) {
+      margin-left: 0rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-less-medium) {
+    display: grid;
+    grid-auto-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
   }
 }
 
@@ -53,6 +64,10 @@
   &__btn {
     font-weight: 600;
     font-family: inherit;
+  }
+
+  @media only screen and (max-width: $bp-less-medium) {
+    justify-content: space-between;
   }
 }
 
@@ -102,12 +117,15 @@
       background-color: $color-grey-light-2;
     }
   }
+
+  @media only screen and (max-width: $bp-less-medium) {
+    margin: 1rem 0;
+  }
 }
 
 .bookmarks {
   padding: 1rem 0;
   position: absolute;
-  // right: 0;
   right: -2.5rem;
   z-index: 10;
   width: 40rem;
@@ -140,5 +158,9 @@
   .nav__btn--bookmarks:hover + & {
     visibility: visible;
     opacity: 1;
+  }
+
+  @media only screen and (max-width: $bp-less-medium) {
+    right: -10.3rem;
   }
 }

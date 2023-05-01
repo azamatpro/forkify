@@ -7,6 +7,10 @@
 .results {
   list-style: none;
   margin-bottom: 2rem;
+  
+  @media only screen and (max-width: $bp-less-medium) {
+    margin-bottom: 0rem;
+  }
 }
 
 .pagination {
@@ -38,5 +42,8 @@
   .twitter-link:link,
   .twitter-link:visited {
     color: $color-grey-dark-2;
+  }
+  @media only screen and (max-width: $bp-less-medium) {
+    margin-top: 1rem;
   }
 }

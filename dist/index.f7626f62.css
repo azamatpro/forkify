@@ -51,6 +51,12 @@ body {
   }
 }
 
+@media only screen and (width <= 50em) {
+  .container {
+    display: block;
+  }
+}
+
 .btn--small, .btn--small:link, .btn--small:visited, .btn {
   text-transform: uppercase;
   color: #fff;
@@ -250,6 +256,12 @@ body {
   line-height: 1.5;
 }
 
+@media only screen and (width <= 50em) {
+  .message, .error {
+    padding: 2rem 4rem;
+  }
+}
+
 .header {
   background-color: #f9f5f3;
   grid-area: head;
@@ -262,6 +274,19 @@ body {
   height: 4.6rem;
   margin-left: 4rem;
   display: block;
+}
+
+@media only screen and (width <= 50em) {
+  .header__logo {
+    margin-left: 0;
+  }
+
+  .header {
+    grid-auto-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    display: grid;
+  }
 }
 
 .search {
@@ -308,6 +333,12 @@ body {
 .search__btn {
   font-family: inherit;
   font-weight: 600;
+}
+
+@media only screen and (width <= 50em) {
+  .search {
+    justify-content: space-between;
+  }
 }
 
 .nav {
@@ -357,6 +388,12 @@ body {
   background-color: #f2efee;
 }
 
+@media only screen and (width <= 50em) {
+  .nav {
+    margin: 1rem 0;
+  }
+}
+
 .bookmarks {
   z-index: 10;
   width: 40rem;
@@ -390,6 +427,12 @@ body {
 .bookmarks:hover, .nav__btn--bookmarks:hover + .bookmarks {
   visibility: visible;
   opacity: 1;
+}
+
+@media only screen and (width <= 50em) {
+  .bookmarks {
+    right: -10.3rem;
+  }
 }
 
 .preview__link:link, .preview__link:visited {
@@ -496,6 +539,12 @@ body {
   list-style: none;
 }
 
+@media only screen and (width <= 50em) {
+  .results {
+    margin-bottom: 0;
+  }
+}
+
 .pagination {
   margin-top: auto;
   padding: 0 3.5rem;
@@ -524,6 +573,12 @@ body {
 
 .copyright .twitter-link:link, .copyright .twitter-link:visited {
   color: #918581;
+}
+
+@media only screen and (width <= 50em) {
+  .copyright {
+    margin-top: 1rem;
+  }
 }
 
 .recipe {
@@ -588,6 +643,12 @@ body {
   display: flex;
 }
 
+@media only screen and (width <= 50em) {
+  .recipe__details {
+    padding: 7.5rem 2rem 3.5rem;
+  }
+}
+
 .recipe__info {
   text-transform: uppercase;
   align-items: center;
@@ -597,6 +658,16 @@ body {
 
 .recipe__info:not(:last-child) {
   margin-right: 4.5rem;
+}
+
+@media only screen and (width <= 31.25em) {
+  .recipe__info:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  .recipe__info {
+    font-size: 1.4rem;
+  }
 }
 
 .recipe__info-icon {
@@ -688,6 +759,12 @@ body {
   font-weight: 700;
 }
 
+@media only screen and (width <= 50em) {
+  .recipe {
+    margin: 0 2rem;
+  }
+}
+
 .add-recipe-window {
   width: 100rem;
   z-index: 1000;
@@ -712,6 +789,12 @@ body {
   position: absolute;
   top: .5rem;
   right: 1.6rem;
+}
+
+@media only screen and (width <= 56.25em) {
+  .add-recipe-window {
+    width: 90%;
+  }
 }
 
 .overlay {
@@ -786,6 +869,12 @@ body {
 .upload__btn {
   grid-column: 1 / -1;
   justify-self: center;
+}
+
+@media only screen and (width <= 50em) {
+  .upload {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */

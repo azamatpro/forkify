@@ -194,8 +194,9 @@
   max-width: 40rem;
   margin: 0 auto;
   padding: 5rem 4rem;
-
+  
   display: flex;
+
 
   svg {
     height: 3rem;
@@ -209,5 +210,9 @@
     font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 600;
+  }
+  
+  @media only screen and (max-width: $bp-less-medium) {
+    padding: 2rem 4rem;
   }
 }
